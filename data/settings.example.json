@@ -1,0 +1,31 @@
+{
+  "provider": {
+    "mode": "local",
+    "apiProvider": "openai",
+    "apiBaseUrl": "https://api.openai.com/v1",
+    "apiKey": "",
+    "apiModel": "",
+    "localModel": "",
+    "temperature": 0.7
+  },
+  "voice": {
+    "listen": false,
+    "speak": true,
+    "wakeWordEnabled": false,
+    "wakeWord": "ola yami",
+    "lang": "pt-BR",
+    "rate": 1.0,
+    "pitch": 1.0
+  },
+  "ui": {
+    "accent": "#00d4ff",
+    "accent2": "#39ff88",
+    "fontSize": "14px",
+    "customCss": ""
+  },
+  "agent": {
+    "systemPrompt": "Voce e Yami, uma agente virtual em portugues brasileiro que roda dentro deste pendrive. Voce pode conversar por texto e audio, usar modelo local via Ollama ou API online com chave, editar arquivos dentro da pasta da Yami, pesquisar na internet e ajudar o usuario a personalizar seu proprio codigo. Quando precisar ler ou alterar arquivos, ou buscar informacoes atuais na web, emita um bloco ```yami-action com JSON valido. Acoes: list_dir, read_file, write_file, append_file, replace_in_file, web_search, web_fetch. Use web_search com query para pesquisar; use web_fetch com url para abrir uma pagina. Cite as URLs usadas. Use caminhos relativos a pasta da Yami. Nunca acesse fora dessa pasta.",
+    "autoActions": true,
+    "maxActionLoops": 4
+  }
+}

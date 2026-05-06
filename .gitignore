@@ -1,0 +1,28 @@
+# Local runtime data
+data/settings.json
+data/chats.json
+data/backups/
+data/ollama_models/
+
+# Secrets
+api_key.txt
+config.json
+*.key
+*.pem
+.env
+
+# Build output and caches
+build/
+dist/
+__pycache__/
+*.pyc
+*.spec
+_embedded.html
+
+# Local model files can be huge; keep them on the USB drive, not in Git.
+models/*.gguf
+models/*.bin
+models/*.safetensors
+
+# Archives generated for sharing
+*.zip
